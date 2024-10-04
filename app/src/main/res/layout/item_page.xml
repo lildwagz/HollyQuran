@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic__number"
+                app:tint="?colorPrimary" />
+
+            <TextView
+                android:id="@+id/text_page_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="604"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/material_on_primary_emphasis_high_type"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_page_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?colorPrimary"
+                android:textStyle="bold"
+                android:text="Halaman 1"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/surah_name_and_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/material_on_surface_emphasis_medium"
+                android:text="Al-Fatihah: 1 - Al-Baqarah: 156"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_quran_ayah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:text="بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم"
+            android:fontFamily="@font/hafs"
+            android:maxLength="30"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider"/>
+
+</LinearLayout>

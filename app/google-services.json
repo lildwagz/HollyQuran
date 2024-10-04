@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "836862745273",
+    "project_id": "trim-epigram-300921",
+    "storage_bucket": "trim-epigram-300921.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836862745273:android:c44479797ee6a51588d968",
+        "android_client_info": {
+          "package_name": "lildwagz.com.hollyquran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836862745273-fuojr7c6d1vkqig1qbotu45pud16nnkb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOA8v7K8SsugeTPXj5QN2qiWx8loZIKjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836862745273-fuojr7c6d1vkqig1qbotu45pud16nnkb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

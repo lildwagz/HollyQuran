@@ -1,0 +1,84 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:id="@+id/image_bookmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_star_24"
+            app:tint="?colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/material_on_surface_emphasis_high_type"
+
+                android:textSize="10sp"
+                android:text="22 oktober 2020"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/text_surah_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/material_on_surface_emphasis_high_type"
+                    android:textStyle="bold"
+                    android:text="Al-Fatihah"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/text_number_of_ayah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/material_on_surface_emphasis_medium"
+                    android:text="Ayat ke 7"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_delete_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:src="@drawable/ic_delete" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider"/>
+
+</androidx.cardview.widget.CardView>

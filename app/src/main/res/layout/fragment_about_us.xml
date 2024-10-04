@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6E6E6"
+        tools:context=".ui.aboutus.AboutUsFragment"
+        android:orientation="vertical">
+
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <com.google.android.material.appbar.MaterialToolbar-->
+<!--                android:id="@+id/topAppBar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                app:title="About Us"-->
+<!--                app:navigationIcon="@drawable/ic_baseline_arrow_back"-->
+<!--                style="@style/Widget.MaterialComponents.Toolbar.Primary"-->
+<!--                />-->
+
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_Quran"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/splash_ico"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_judulapk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@+id/iv_Quran"
+                    android:paddingEnd="16dp"
+                    android:text="@string/app_name"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textSize="10pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_judulapk"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toEndOf="@+id/iv_Quran"
+                    android:paddingEnd="16dp"
+                    android:text="Aplikasi quran Indonesia"
+                    android:textColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/iv_informasi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/iv_Quran"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_baseline_info" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_Quran"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/iv_informasi"
+                    android:paddingEnd="16dp"
+                    android:text="Version"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_versionkode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_version"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="35dp"
+                    android:layout_toEndOf="@+id/iv_informasi"
+                    android:paddingEnd="16dp"
+                    android:text="0.1 alpha"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_changelog"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/iv_informasi"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_changelog" />
+
+                <TextView
+                    android:id="@+id/tv_changelog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_informasi"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/iv_changelog"
+                    android:paddingEnd="16dp"
+                    android:text="changelog"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_licence"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/iv_changelog"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_licensi" />
+
+                <TextView
+                    android:id="@+id/tv_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_changelog"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/iv_licence"
+                    android:paddingEnd="16dp"
+                    android:text="license"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="25dp"/>
+                <ImageView
+                    android:id="@+id/iv_feedback"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/iv_licence"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_baseline_report_problem" />
+
+                <TextView
+                    android:id="@+id/tv_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_licence"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/iv_feedback"
+                    android:paddingEnd="16dp"
+                    android:text="Feedback"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="25dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Author"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_user"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tv_author"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_baseline_perm_contact" />
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_author"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/iv_user"
+                    android:paddingEnd="16dp"
+                    android:text="GabutCodex"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_negara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="35dp"
+                    android:layout_toEndOf="@+id/iv_user"
+                    android:paddingEnd="16dp"
+                    android:text="Asia"
+                    android:textColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/iv_download"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tv_user"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/ic_baseline_arrow_downward" />
+
+                <TextView
+                    android:id="@+id/tv_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/iv_user"
+                    android:paddingEnd="16dp"
+                    android:text="Download From Cloud"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

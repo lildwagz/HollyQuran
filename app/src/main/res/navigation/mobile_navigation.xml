@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_quran">
+
+    <fragment
+        android:id="@+id/nav_quran"
+        android:name="lildwagz.com.hollyquran.ui.quran.QuranViewPagerFragment"
+        android:label="@string/menu_quran"
+        tools:layout="@layout/fragment_quran" >
+        <action
+            android:id="@+id/action_nav_quran_to_nav_read_quran"
+            app:destination="@id/nav_read_quran" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_rating"
+        android:name="lildwagz.com.hollyquran.ui.rating.RatingFragment"
+        android:label="@string/menu_ranting"
+        tools:layout="@layout/fragment_rating" />
+    <fragment
+        android:id="@+id/nav_bookmark"
+        android:name="lildwagz.com.hollyquran.ui.bookmark.BookmarkFragment"
+        android:label="@string/menu_bookmark"
+        tools:layout="@layout/fragment_bookmark" >
+        <action
+            android:id="@+id/action_nav_bookmark_to_nav_read_quran"
+            app:destination="@id/nav_read_quran" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_contact"-->
+<!--        android:name="lildwagz.com.hollyquran.ui.contact.ContactFragment"-->
+<!--        android:label="@string/menu_contact"-->
+<!--        tools:layout="@layout/fragment_contact" />-->
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="lildwagz.com.hollyquran.ui.about.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_schedule_prayer"
+        android:name="lildwagz.com.hollyquran.ui.schedule_prayer.SchedulePrayerFragment"
+        android:label="@string/schedule_prayer"
+        tools:layout="@layout/fragment_schedule_prayer"/>
+
+    <fragment
+        android:id="@+id/nav_read_quran"
+        android:name="lildwagz.com.hollyquran.ui.quran.ReadQuranFragment"
+        android:label="Quran"
+        tools:layout="@layout/fragment_read_quran">
+        <action
+            android:id="@+id/action_nav_read_quran_to_nav_quran_footnotes"
+            app:destination="@id/nav_quran_footnotes" />
+        <action
+            android:id="@+id/action_nav_read_quran_to_nav_search_quran_Fragment"
+            app:destination="@id/nav_search_quran_Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tab_surah"
+        android:name="lildwagz.com.hollyquran.ui.quran.TabSurahFragment"
+        android:label="TabSurahFragment"
+        tools:layout="@layout/fragment_tab_surah">
+        <action
+            android:id="@+id/action_nav_tab_surah_to_nav_read_quran"
+            app:destination="@id/nav_read_quran" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tab_juz"
+        android:name="lildwagz.com.hollyquran.ui.quran.TabJuzFragment"
+        android:label="TabJuzFragment"
+        tools:layout="@layout/fragment_tab_juz">
+        <action
+            android:id="@+id/action_nav_tab_juz_to_nav_read_quran"
+            app:destination="@id/nav_read_quran" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tab_page"
+        android:name="lildwagz.com.hollyquran.ui.quran.TabPageFragment"
+        android:label="TabPageFragment"
+        tools:layout="@layout/fragment_tab_page">
+        <action
+            android:id="@+id/action_nav_tab_page_to_nav_read_quran"
+            app:destination="@id/nav_read_quran" />
+    </fragment>
+
+    <fragment android:id="@+id/action_settings"
+        android:name="lildwagz.com.hollyquran.ui.settings.SettingsFragment"
+        android:label="Setting"/>
+
+    <dialog
+        android:id="@+id/nav_quran_footnotes"
+        android:name="lildwagz.com.hollyquran.ui.quran.QuranFootnotesFragment"
+        android:label="QuranFootnotesFragment"
+        tools:layout="@layout/bottomsheet_footnotes"/>
+
+    <fragment android:id="@+id/nav_search_quran_Fragment"
+        android:name="lildwagz.com.hollyquran.ui.search.SearchQuranFragment"
+        android:label="Pencarian"
+        tools:layout="@layout/fragment_search_quran"/>
+
+
+
+</navigation>

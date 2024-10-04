@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Ayah Setting">
+
+        <EditTextPreference
+            android:defaultValue="18"
+            android:dialogIcon="@drawable/ic_format"
+            android:icon="@drawable/ic_format"
+            android:key="ayah_text_preference"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Ayah Font Size"
+            android:title="Ayah Font Size" />
+    </PreferenceCategory>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:icon="@drawable/ic_baseline_brightness"
+        android:key="switch_dark_mode_preference"
+        android:summary="turn on the night mode"
+        android:summaryOff="day mode"
+        android:summaryOn="night mode"
+        android:title="Dark Mode"
+        />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:icon="@drawable/ic_baseline_translate"
+        android:key="switch_ayah_translate_preference"
+        android:summary="turn on indonesian translate"
+        android:summaryOff="terjemahan indonesian"
+        android:summaryOn="tidak ada terjemahan"
+        android:title="without ayah translation"
+        />
+
+    <PreferenceCategory
+        android:key="setting_title_font_category"
+        android:title="quran reciter">
+
+        <ListPreference
+            android:icon="@drawable/ic_baseline_surround_sound"
+            android:key="setting_reciter"
+            android:title="the reciters"
+            android:summary="change the reciter of quran"
+            android:entries="@array/reciters"
+            android:entryValues="@array/reciters_value"
+            android:dialogTitle="Change reciter" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="4dp"
+            app:boxStrokeColor="@color/design_default_color_surface"
+            app:boxStrokeWidth="0dp"
+            app:endIconMode="clear_text"
+            app:placeholderText="Pencarian"
+            app:hintEnabled="false"
+            android:layout_marginHorizontal="16dp"
+            app:startIconDrawable="@drawable/ic_baseline_search_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_text_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:hint="Pencarian"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_ayah" />
+
+
+
+
+</LinearLayout>

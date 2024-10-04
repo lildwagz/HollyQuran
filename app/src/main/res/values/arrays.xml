@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reciters">
+
+        <item>Abdurahman as syudais</item>
+        <item>Salaah AbdulRahman Bukhatir</item>
+        <item>Abdullah Basfar</item>
+    </string-array>
+    <string-array name="reciters_value">
+
+        <item>Abdurrahman as-Sudais</item>
+        <item>Salaah AbdulRahman Bukhatir 128kbps</item>
+        <item>Abdullah Basfar</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HollyQuran</string>
+
+    <string name="copyright_2k20">Copyright © 2021 All Rights Reserved</string>
+    <string name="powered_by">Powered By GabutCodex</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Holly Quran</string>
+    <string name="nav_header_subtitle">zamrabbaney@riliskill.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_quran">Quran</string>
+    <string name="menu_ranting">Beri Ranting</string>
+    <string name="menu_contact">Kontak Kami</string>
+    <string name="menu_about_us">Tentang Kami</string>
+    <string name="tab_surah">Surat</string>
+    <string name="tab_juz">Juz</string>
+    <string name="tab_bookmarks">Penanda</string>
+    <string name="nameapk">Quran app</string>
+    <string name="schedule_prayer">Jadwal Sholat</string>
+    <string name="menu_bookmark">Bookmark</string>
+</resources>
